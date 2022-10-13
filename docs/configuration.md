@@ -653,7 +653,7 @@ service_key_file: <filepath>
 # The URL to send API requests to
 [ url: <string> | default = global.pagerduty_url ]
 
-# The client identification of the Alertmanager.
+# The client identification of the Alertmanager. test
 [ client:  <tmpl_string> | default = '{{ template "pagerduty.default.client" . }}' ]
 # A backlink to the sender of the notification.
 [ client_url:  <tmpl_string> | default = '{{ template "pagerduty.default.clientURL" . }}' ]
